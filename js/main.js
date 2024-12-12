@@ -168,11 +168,10 @@ datos.forEach((r)=>{
            <td>${r.cantidad}</td>
            <td>${r.precio}</td>
             </tr>`;
-            cuerpoTabla.insertAdjacentElement("beforeend", row);
+            cuerpoTabla.insertAdjacentHTML("beforeend", row);
 
     
 })
-
 precioTotal.innerText= "$" + costoTotal.toFixed(2);
 contadorProductos.innerText = cont;
 productosTotal.innerText = totalEnProductos;
